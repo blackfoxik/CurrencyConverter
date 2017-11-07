@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1D19A41FB25E4D0051DE90 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D19A31FB25E4D0051DE90 /* ServiceLocator.swift */; };
 		3A3BC64B1FA1C6B200103F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3BC64A1FA1C6B200103F01 /* AppDelegate.swift */; };
 		3A3BC64D1FA1C6B200103F01 /* CurrencyConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3BC64C1FA1C6B200103F01 /* CurrencyConverterViewController.swift */; };
 		3A3BC6501FA1C6B200103F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3BC64E1FA1C6B200103F01 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A1D19A31FB25E4D0051DE90 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		3A3BC6471FA1C6B200103F01 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3BC64A1FA1C6B200103F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A3BC64C1FA1C6B200103F01 /* CurrencyConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		3A6B41AB1FAADB2600783B0C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3A1D19A31FB25E4D0051DE90 /* ServiceLocator.swift */,
 				3A3BC6711FA7D61100103F01 /* FixerIODataProvider.swift */,
 				3A7870291FAA67EC0086ACC5 /* CurrencyDataProviderService.swift */,
 			);
@@ -290,6 +293,7 @@
 				3A3BC66E1FA7C92600103F01 /* CurrencyPair.swift in Sources */,
 				3A7870381FAAA49C0086ACC5 /* CurrencySelectorViewObserverProtocol.swift in Sources */,
 				3A7870341FAAA2C40086ACC5 /* CurrencyConverterViewObserverProtocol.swift in Sources */,
+				3A1D19A41FB25E4D0051DE90 /* ServiceLocator.swift in Sources */,
 				3A3BC66C1FA7C89F00103F01 /* Currency.swift in Sources */,
 				3A3BC6701FA7CE3700103F01 /* CurrenciesDataProviderProtocol.swift in Sources */,
 				3A3BC64D1FA1C6B200103F01 /* CurrencyConverterViewController.swift in Sources */,

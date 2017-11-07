@@ -14,10 +14,7 @@ protocol CurrencyConverterViewObserver {
     func getCurrencyToName() -> String?
     func getCurrinciesList() -> [Currency]
     
-    //all following stuff should be deleted after moving assembling presenter from ViewController to router
-    var view: CurrencyConverterViewObservable? { get set }
-    var currencyPair: CurrencyPair? {get set}
     func changeCurrencyFromCount(count: Double)
     func changeCurrencyToCount(count: Double)
-    var currenciesList: [Currency] {get set}
+    var view: CurrencyConverterViewObservable? { get set }
 }

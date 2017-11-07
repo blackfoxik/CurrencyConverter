@@ -45,20 +45,9 @@ class CurrencyConverterViewController: UIViewController {
 
 extension CurrencyConverterViewController {
     private func setupPresenter() {
-        //all following stuffs should be implemented in router
-        let fixerIOdataProvider = FixerIODataProvider()
-        let dataProviderService = CurrencyDataProviderService(dataProvider: fixerIOdataProvider)
-        _ = dataProviderService.getCurrenciesList() { currenciesList in
-            self.presenter = CurrencyConverterPresenter()
-            self.presenter?.currenciesList = currenciesList
-            let currencyPair = CurrencyPair(currencyFrom: currenciesList[DefaultKeys.DEFAULT_CURRENCY_FROM_NUMBER],
-                                            currencyTo: currenciesList[DefaultKeys.DEFAULT_CURRENCY_TO_NUMBER],
-                                            dataProviderService: dataProviderService,
-                                            presenter: self.presenter as! CurrencyPairModelObserver)
-            self.presenter?.currencyPair = currencyPair
-            self.presenter?.view = self
-            self.updateUI()
-        }
+        presenter = ServiceLocator.resolve(presenterType: .CurrencyConverterViewPresenter) as? CurrencyConverterViewObserver
+        presenter?.view = self
+        updateUI()        
     }
 }
 
