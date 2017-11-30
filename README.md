@@ -4,5 +4,9 @@
 - Modules communicate by protocols, dependency injections by setters and constructors. 
 - One Storyboard(with base for expand). UI built by Interface builder, constraints by Autolayout.
 - No segues. 
-- Rates data provider module can be replaced by another one - we need only conform to protocol. 
+- Rates data provider module can be replaced by another one - we need only conform to protocol.
+
+<a href="url"><img src="AdditionalFiles/main_screen.png" align="left" height="432" width="244" ></a>
+
+<a href="url"><img src="AdditionalFiles/currency_list.png" align="left" height="432" width="244" ></a>
 
